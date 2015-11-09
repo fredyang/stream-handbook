@@ -1,3 +1,5 @@
+//we don't need to sub-class a Readable, instead
+//just create an instance
 var Readable = require('stream').Readable;
 var rs = Readable();
 
