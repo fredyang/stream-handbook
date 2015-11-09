@@ -5,6 +5,8 @@ var offset = 0;
 
 var linefeed = 0x0a;
 
+//consuming readable stream directly
+//no piping it to a writable stream
 process.stdin.on('readable', function () {
     var buffer = process.stdin.read();
 
