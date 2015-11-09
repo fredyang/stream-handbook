@@ -17,6 +17,8 @@ rs._read = function () {
     }, 100);
 };
 
+//the readable stream can use as the source
+//for piping
 rs.pipe(process.stdout);
 
 //this handler is necessary because the operating system will
